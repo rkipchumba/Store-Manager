@@ -339,8 +339,15 @@ input:focus{
     outline: none;
 }
 
+.small-image-row{
+    display: flex;
+    justify-content: space-between;
+    
+}
 
-
+.small-image{
+    flex-basis: 24%;
+}
 
 
 
