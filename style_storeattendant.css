@@ -423,5 +423,11 @@ th:last-child{
        font-size: 26px;
        line-height: 22px; 
     }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .cart-info p{
+        display: none;
+    }
 
 }
