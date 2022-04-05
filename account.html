@@ -32,7 +32,7 @@
     </div>
 </div>
 
-<!--------------account page----------->
+<!--------------account page-------------->
 <div class="account-page">
     <div class="container">
         <div class="row">
@@ -44,7 +44,7 @@
                     <div class="form-btn">
                         <span onclick="login()">Login</span>
                         <span onclick="register()">Register</span>
-                        <hr id="Indicator"
+                        <hr id="Indicator">
                     </div>
                     <form id="LoginForm">
                         <input type="text" placeholder="Username">
@@ -115,24 +115,35 @@
         function menutoggle(){
             if(MenuItems.style.maxHeigh == "0px")
                 {
-                     MenuItems.style.maxHeigh - "200px"
+                     MenuItems.style.maxHeigh = "200px"
                 }
             else
                 {
-                    MenuItems.style.maxHeigh - "0px"
+                    MenuItems.style.maxHeigh = "0px"
                 }
         }
     </script>
     <!-----------js for toggle form--------->
     <script>
-        var LoginForm = document.getElementById("LoginForm")
-        var RegForm = document.getElementById("RegForm")
-        var Indicator = document.getElementById("Indicator")
+
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
 
             function register(){
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+
+            }
+
+
+            function Login(){
 
                 RegForm.style.transform = "translateX(300px)";
                 LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+
             }
     </script>
 </body>
